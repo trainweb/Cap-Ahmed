@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية الكاملة - الكابتن أحمد نصر</title>
+    <meta name="description" content="السيرة الذاتية الكاملة للكابتن أحمد نصر نصر أبواليزيد هرماش - أخصائي التدريب الرياضي والتأهيل البدني">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cv-page {
+            background: var(--light-bg);
+            min-height: 100vh;
+            padding: 100px 0;
+        }
+        
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .cv-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 60px;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+        }
+        
+        .cv-header h1 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        
+        .cv-header .subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .cv-header .tagline {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .cv-content {
+            background: var(--white);
+            padding: 50px 60px;
+            box-shadow: var(--shadow);
+        }
+        
+        .cv-section {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .cv-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .cv-section-title {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .cv-section-title i {
+            color: var(--secondary-color);
+            font-size: 36px;
+        }
+        
+        .cv-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .cv-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 10px;
+        }
+        
+        .cv-info-item i {
+            font-size: 24px;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+        
+        .cv-info-item .label {
+            display: block;
+            font-size: 13px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .cv-info-item .value {
+            display: block;
+            font-size: 16px;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+        
+        .cv-text {
+            font-size: 17px;
+            line-height: 2;
+            color: var(--text-dark);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .experience-item {
+            margin-bottom: 35px;
+            padding: 30px;
+            background: var(--light-bg);
+            border-radius: 15px;
+            border-right: 5px solid var(--secondary-color);
+        }
+        
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .experience-title {
+            flex: 1;
+        }
+        
+        .experience-title h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        
+        .experience-title .role {
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        .experience-date {
+            background: var(--white);
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: var(--primary-color);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        
+        .experience-description {
+            color: var(--text-dark);
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+        
+        .experience-highlights {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .experience-highlights li {
+            padding: 8px 0;
+            color: var(--text-dark);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .experience-highlights i {
+            color: var(--secondary-color);
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-item {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        
+        .skill-info h4 {
+            color: var(--primary-color);
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+        
+        .skill-level {
+            font-size: 13px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            max-width: 300px;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
+        }
+        
+        .back-button:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(39, 174, 96, 0.5);
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 30px 10px;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(26, 58, 82, 0.3);
+        }
+        
+        .download-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(26, 58, 82, 0.5);
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .achievements-list {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .achievement-item {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .achievement-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+        
+        .achievement-content h4 {
+            color: var(--primary-color);
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        
+        .achievement-content p {
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .cv-header,
+            .cv-content {
+                padding: 30px;
+            }
+            
+            .cv-header h1 {
+                font-size: 32px;
+            }
+            
+            .cv-info-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .back-button,
+            .download-btn {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-page">
+        <div class="cv-container">
+            <div class="cv-header">
+                <h1>الكابتن أحمد نصر نصر أبواليزيد هرماش</h1>
+                <p class="subtitle">أخصائي التدريب الرياضي والإصابات الرياضية والتأهيل البدني والتدليك الرياضي</p>
+                <p class="tagline">خبرة ميدانية في تدريب وتأهيل الرياضيين من مختلف المستويات عبر أكبر الأندية المصرية</p>
+            </div>
+            
+            <div class="cv-content">
+                <!-- المعلومات الشخصية -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-user"></i>
+                        المعلومات الشخصية
+                    </h2>
+                    <div class="cv-info-grid">
+                        <div class="cv-info-item">
+                            <i class="fas fa-id-card"></i>
+                            <div>
+                                <span class="label">الاسم الكامل</span>
+                                <span class="value">أحمد نصر نصر أبواليزيد هرماش</span>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <span class="label">الجنسية</span>
+                                <span class="value">مصري</span>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="label">المهنة</span>
+                                <span class="value">أخصائي تدريب رياضي وتأهيل بدني</span>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="label">تاريخ الميلاد</span>
+                                <span class="value">15 مارس 1995</span>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="label">المؤهل الدراسي</span>
+                                <span class="value">بكالوريوس تربية رياضية</span>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <span class="label">الجامعة</span>
+                                <span class="value">جامعة الأزهر - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- نبذة عني -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-file-alt"></i>
+                        نبذة عني
+                    </h2>
+                    <p class="cv-text">
+                        أنا الكابتن أحمد نصر نصر أبواليزيد هرماش، أخصائي في التدريب الرياضي والتأهيل البدني مع شغف عميق بمساعدة الرياضيين على تحقيق أعلى مستويات الأداء. حاصل على بكالوريوس التربية الرياضية من جامعة الأزهر عام 2022، وأمتلك خبرة ميدانية واسعة في العمل مع أكبر الأندية المصرية والمنتخبات الوطنية.
+                    </p>
+                    <p class="cv-text">
+                        عملت مع نادي المقاولون العرب والفريق الأول لنادي طلائع الجيش وقطاع الناشئين في نادي إنبي، كما كان لي شرف المشاركة في إعداد منتخب مصر للمصارعة لأوليمبياد باريس 2024، حيث ساهمت في تأهيل وإعداد أبطال على المستوى الدولي مثل كرم جابر وعبداللطيف منيع.
+                    </p>
+                    <p class="cv-text">
+                        أؤمن بأن النجاح الرياضي يبدأ من الإعداد الصحيح والتأهيل العلمي المبني على أسس علمية حديثة. أسعى دائمًا لتطوير مهاراتي من خلال الدورات التدريبية المتخصصة والاطلاع على أحدث الأبحاث في مجال علوم الرياضة والتأهيل البدني. هدفي هو مساعدة الرياضيين على تحقيق أهدافهم بأمان واحترافية، سواء كانوا لاعبين محترفين أو هواة يسعون لتحسين لياقتهم البدنية.
+                    </p>
+                    <p class="cv-text">
+                        أقدم خدمات متكاملة تشمل التدريب الرياضي الفردي والجماعي، التأهيل من الإصابات الرياضية، جلسات التدليك الرياضي، الإعداد البدني للاعبين، وبرامج اللياقة العامة. كل برنامج أقدمه مصمم بعناية ليلبي احتياجات كل رياضي على حدة، مع مراعاة مستواه البدني وأهدافه الخاصة.
+                    </p>
+                </div>
+                
+                <!-- الخبرات العملية -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-briefcase"></i>
+                        الخبرات العملية
+                    </h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>صالون أنتيب - مملكة البحرين</h3>
+                                <p class="role">أخصائي التدليك الرياضي والعلاجي</p>
+                            </div>
+                            <div class="experience-date">ديسمبر 2024 - حتى الآن</div>
+                        </div>
+                        <p class="experience-description">
+                            تقديم خدمات التدليك الرياضي والعلاجي المتخصصة للعملاء في مملكة البحرين، مع التركيز على الاستشفاء والعلاج الطبيعي.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><i class="fas fa-check-circle"></i>تقديم جلسات تدليك رياضي احترافية</li>
+                            <li><i class="fas fa-check-circle"></i>العلاج الطبيعي للإصابات والآلام المزمنة</li>
+                            <li><i class="fas fa-check-circle"></i>تطبيق تقنيات التدليك العميق والسويدي</li>
+                            <li><i class="fas fa-check-circle"></i>برامج استشفاء مخصصة للرياضيين والأفراد</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>نادي المقاولون العرب</h3>
+                                <p class="role">أخصائي التأهيل البدني - الفريق الأول</p>
+                            </div>
+                            <div class="experience-date">2023 - 2024</div>
+                        </div>
+                        <p class="experience-description">
+                            العمل مع لاعبي الفريق الأول على التأهيل من الإصابات والإعداد البدني للمباريات الرسمية في الدوري المصري الممتاز.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><i class="fas fa-check-circle"></i>إعداد برامج تأهيل مخصصة لكل لاعب حسب نوع الإصابة</li>
+                            <li><i class="fas fa-check-circle"></i>الإشراف على جلسات الإعداد البدني قبل وبعد المباريات</li>
+                            <li><i class="fas fa-check-circle"></i>التنسيق مع الطاقم الطبي والفني لضمان جاهزية اللاعبين</li>
+                            <li><i class="fas fa-check-circle"></i>تطبيق أحدث تقنيات التأهيل والوقاية من الإصابات</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>منتخب مصر للمصارعة</h3>
+                                <p class="role">مسؤول الإعداد البدني - أوليمبياد باريس 2024</p>
+                            </div>
+                            <div class="experience-date">2024</div>
+                        </div>
+                        <p class="experience-description">
+                            إعداد وتأهيل المصارعين للمشاركة في أوليمبياد باريس، بما في ذلك الأبطال كرم جابر وعبداللطيف منيع.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><i class="fas fa-check-circle"></i>تصميم برامج تدريب مكثفة للإعداد الأوليمبي</li>
+                            <li><i class="fas fa-check-circle"></i>متابعة الحالة البدنية للمصارعين بشكل يومي</li>
+                            <li><i class="fas fa-check-circle"></i>تطبيق بروتوكولات التغذية والاستشفاء المتقدمة</li>
+                            <li><i class="fas fa-check-circle"></i>المشاركة في المعسكرات التدريبية الإعدادية</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>نادي إنبي</h3>
+                                <p class="role">مدرب القوة البدنية - قطاع الناشئين</p>
+                            </div>
+                            <div class="experience-date">2022 - 2023</div>
+                        </div>
+                        <p class="experience-description">
+                            تطوير القدرات البدنية للاعبين الناشئين وبناء أساس قوي لمستقبلهم الرياضي.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><i class="fas fa-check-circle"></i>تصميم برامج تدريبية تناسب الفئات العمرية المختلفة</li>
+                            <li><i class="fas fa-check-circle"></i>تطوير القدرات البدنية الأساسية (قوة، سرعة، تحمل، مرونة)</li>
+                            <li><i class="fas fa-check-circle"></i>تعليم اللاعبين الناشئين تقنيات الإحماء والتهدئة الصحيحة</li>
+                            <li><i class="fas fa-check-circle"></i>متابعة التطور البدني والمهاري للاعبين</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>نادي طلائع الجيش</h3>
+                                <p class="role">أخصائي اللياقة البدنية - الفريق الأول</p>
+                            </div>
+                            <div class="experience-date">2021 - 2022</div>
+                        </div>
+                        <p class="experience-description">
+                            الإشراف على برامج اللياقة والإعداد البدني للفريق الأول.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><i class="fas fa-check-circle"></i>إعداد خطط التدريب البدني الموسمية</li>
+                            <li><i class="fas fa-check-circle"></i>تقييم مستوى اللياقة البدنية للاعبين بشكل دوري</li>
+                            <li><i class="fas fa-check-circle"></i>تطبيق برامج الاستشفاء بعد المباريات</li>
+                            <li><i class="fas fa-check-circle"></i>التنسيق مع المدرب الفني لتحقيق التوازن بين التدريب البدني والفني</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- المهارات والتخصصات -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-star"></i>
+                        المهارات والتخصصات
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>التدريب الرياضي</h4>
+                                <p class="skill-level">خبير - 5+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>التأهيل من الإصابات</h4>
+                                <p class="skill-level">متقدم - 5+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>التدليك الرياضي</h4>
+                                <p class="skill-level">خبير - 4+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>الإعداد البدني</h4>
+                                <p class="skill-level">خبير - 5+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>برامج اللياقة</h4>
+                                <p class="skill-level">متقدم - 5+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>التدريب الجماعي</h4>
+                                <p class="skill-level">متقدم - 4+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>تقييم الأداء</h4>
+                                <p class="skill-level">متقدم - 5+ سنوات</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>تخطيط البرامج</h4>
+                                <p class="skill-level">خبير - 5+ سنوات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الإنجازات والمشاركات -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-trophy"></i>
+                        الإنجازات والمشاركات
+                    </h2>
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-globe-africa"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>المشاركة في أوليمبياد باريس 2024</h4>
+                                <p>مسؤول الإعداد البدني لمنتخب مصر للمصارعة في الألعاب الأوليمبية بباريس، حيث ساهمت في إعداد وتأهيل المصارعين للمنافسة على أعلى مستوى عالمي.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>تأهيل أبطال عالميين</h4>
+                                <p>المساهمة في تأهيل وإعداد الأبطال المصريين كرم جابر وعبداللطيف منيع، أبطال المصارعة على المستوى الدولي.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>بطولة العالم الرابعة عشر للمكفوفين 2019</h4>
+                                <p>عضو اللجنة المنظمة للبطولة العالمية الرابعة عشر للمكفوفين، المشاركة في تنظيم وإنجاح فعاليات البطولة.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>العمل مع أندية الدوري الممتاز</h4>
+                                <p>خبرة واسعة في العمل مع الفرق الأولى لأكبر أندية الكرة المصرية: المقاولون العرب، طلائع الجيش، وإنبي.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>شهادات ودورات تدريبية متخصصة</h4>
+                                <p>حاصل على عدة شهادات ودورات في التأهيل الرياضي، التدليك العلاجي، القوة والتكييف البدني، والتدريب الجماعي من مؤسسات معترف بها دوليًا.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- التعليم والمؤهلات -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        التعليم والمؤهلات
+                    </h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>بكالوريوس التربية الرياضية</h3>
+                                <p class="role">تخصص: تدريب رياضي</p>
+                            </div>
+                            <div class="experience-date">2022</div>
+                        </div>
+                        <p class="experience-description">
+                            جامعة الأزهر - كلية التربية الرياضية
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><i class="fas fa-check-circle"></i>دراسة متعمقة في علوم التدريب الرياضي وفسيولوجيا الرياضة</li>
+                            <li><i class="fas fa-check-circle"></i>تخصص في مجال التدريب والإعداد البدني</li>
+                            <li><i class="fas fa-check-circle"></i>تدريب عملي في أندية ومنشآت رياضية مختلفة</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- الدورات التدريبية -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-certificate"></i>
+                        الدورات والشهادات المهنية
+                    </h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>دورة التأهيل الرياضي المتقدم</h3>
+                                <p class="role">الاتحاد المصري للطب الرياضي</p>
+                            </div>
+                            <div class="experience-date">2023</div>
+                        </div>
+                        <p class="experience-description">
+                            دورة متخصصة في التأهيل من الإصابات الرياضية والوقاية منها، تشمل أحدث التقنيات والبروتوكولات العلاجية.
+                        </p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>دبلوم التدليك الرياضي</h3>
+                                <p class="role">الأكاديمية الدولية للعلاج الطبيعي</p>
+                            </div>
+                            <div class="experience-date">2022</div>
+                        </div>
+                        <p class="experience-description">
+                            تأهيل شامل في تقنيات التدليك الرياضي والعلاجي، بما في ذلك التدليك العميق، تدليك الأنسجة، والتدليك السويدي.
+                        </p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>دورة القوة والتكييف البدني</h3>
+                                <p class="role">NSCA المعتمدة</p>
+                            </div>
+                            <div class="experience-date">2021</div>
+                        </div>
+                        <p class="experience-description">
+                            برنامج متخصص في تطوير القوة البدنية وبناء العضلات، يشمل تصميم البرامج التدريبية وتقنيات رفع الأثقال.
+                        </p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>دورة التدريب الجماعي</h3>
+                                <p class="role">الأكاديمية الأمريكية للطب الرياضي</p>
+                            </div>
+                            <div class="experience-date">2021</div>
+                        </div>
+                        <p class="experience-description">
+                            تصميم وتنفيذ برامج التدريب الجماعي الفعالة، وتقنيات التحفيز والقيادة الجماعية.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- رؤيتي وأهدافي -->
+                <div class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-eye"></i>
+                        رؤيتي وأهدافي
+                    </h2>
+                    <p class="cv-text">
+                        رؤيتي هي أن أكون من الأخصائيين الرياديين في مجال التدريب الرياضي والتأهيل البدني في مصر والوطن العربي، وأن أساهم في رفع مستوى الرياضة المصرية من خلال إعداد وتأهيل أجيال من الرياضيين المحترفين القادرين على المنافسة على أعلى المستويات.
+                    </p>
+                    <p class="cv-text">
+                        أسعى باستمرار لتطوير مهاراتي ومعارفي من خلال متابعة أحدث الأبحاث والدراسات في مجال علوم الرياضة، والمشاركة في الدورات التدريبية المتخصصة، والاستفادة من تجارب الخبراء العالميين في هذا المجال. أؤمن بأن التعلم المستمر هو مفتاح النجاح والتميز.
+                    </p>
+                    <p class="cv-text">
+                        هدفي الأساسي هو تقديم خدمات احترافية متميزة تساعد الرياضيين على تحقيق أهدافهم بأمان وفعالية، سواء كانوا لاعبين محترفين يسعون للوصول إلى القمة، أو هواة يرغبون في تحسين لياقتهم البدنية والحفاظ على صحتهم. كل شخص يستحق الحصول على برنامج تدريبي مخصص يلبي احتياجاته ويحترم قدراته وحدوده.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-right"></i>
+                    العودة للصفحة الرئيسية
+                </a>
+                <a href="https://wa.me/201005577292?text=مرحباً، أريد الاستفسار عن الخدمات" class="download-btn" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل معنا الآن
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- زر واتساب عائم -->
+    <a href="https://wa.me/201005577292" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span>تواصل مباشرة مع الكابتن أحمد 💬</span>
+    </a>
+    
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="العودة للأعلى" title="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
