@@ -1732,3 +1732,24 @@ body {
     }
 }
 
+/* ===== تنسيقات خاصة بصفحة السيرة الذاتية ===== */
+.instagram-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.instagram-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.instagram-btn {
+    background: linear-gradient(135deg, #833AB4, #FD1D1D, #F56040);
+}
+
+.instagram-btn:hover {
+    background: linear-gradient(135deg, #9d4dc4, #ff2727, #ff7050);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(131, 58, 180, 0.5);
+}
+
