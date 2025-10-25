@@ -1450,17 +1450,23 @@ body {
     }
     
     .timeline::before {
-        right: 30px;
+        right: 40px;
     }
     
     .timeline-item {
         flex-direction: row !important;
         text-align: right !important;
+        padding-right: 80px;
+        padding-left: 0;
     }
     
     .timeline-icon {
-        right: 0;
+        right: 10px;
         transform: translateX(0);
+    }
+    
+    .timeline-content {
+        margin-right: 0;
     }
 }
 
@@ -1521,8 +1527,51 @@ body {
         grid-template-columns: 1fr;
     }
     
+    /* تحسين Timeline للهواتف */
+    .timeline::before {
+        right: 35px;
+    }
+    
+    .timeline-item {
+        padding-right: 90px;
+        padding-left: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .timeline-icon {
+        right: 5px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        box-shadow: 0 0 0 5px var(--white), 0 3px 15px rgba(0, 0, 0, 0.2);
+    }
+    
     .timeline-content {
-        padding: 20px;
+        padding: 20px 15px;
+    }
+    
+    .timeline-year {
+        font-size: 12px;
+        padding: 6px 15px;
+        margin-bottom: 12px;
+        white-space: normal;
+        line-height: 1.4;
+    }
+    
+    .timeline-content h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    
+    .timeline-role {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .timeline-content p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 }
 
@@ -1542,6 +1591,76 @@ body {
     
     .stat-number {
         font-size: 36px;
+    }
+    
+    /* تحسينات إضافية للشاشات الصغيرة جداً */
+    .timeline::before {
+        right: 30px;
+    }
+    
+    .timeline-item {
+        padding-right: 75px;
+        padding-left: 5px;
+    }
+    
+    .timeline-icon {
+        right: 2px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .timeline-content {
+        padding: 15px 10px;
+    }
+    
+    .timeline-year {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+    
+    .timeline-role {
+        font-size: 13px;
+    }
+    
+    .timeline-content p {
+        font-size: 13px;
+    }
+    
+    /* تحسين بطاقات الخدمات */
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+    
+    /* تحسين النماذج */
+    .quick-contact-form input,
+    .quick-contact-form select {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    /* تحسين شبكة المعلومات */
+    .info-item {
+        padding: 15px;
+    }
+    
+    .info-item i {
+        font-size: 20px;
     }
 }
 
